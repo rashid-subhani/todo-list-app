@@ -67,4 +67,33 @@ function renderTasks() {
     });
 }
 
+// Save edited task
+saveTaskBtn.addEventListener('click', () => {
+    const updatedTask = editTaskInput.value.trim();
 
+    if (updatedTask === '') {
+        alert('Task cannot be empty!');
+        return;
+    }
+
+    if (tasks.includes(updatedTask) && updatedTask !== tasks[taskBeingEdited]) {
+        alert('Task already exists!');
+        return;
+    }
+
+    tasks[taskBeingEdited] = updatedTask;
+    renderTasks();
+    editModal.style.display = 'none';
+});
+
+// Close modal
+closeBtn.onclick = () => {
+    editModal.style.display = 'none';
+};
+
+// Optional: Close modal when clicking outside 
+window.onclick = (e) => {
+    if (e.target === editModal) {
+        editModal.style.display = 'none';
+    }
+};
