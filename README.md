@@ -61,9 +61,11 @@ Just a modern browser! No frameworks or build tools required.
 ## ✨ Screenshots
 
 > Screenshots here :
-* **Main App View **: (./assets/todo_app.JPG)
+* **Main App View **: 
+![App Screenshot](./assets/todo_app.JPG)
 
-* **Edit Task Modal** (./assets/todo_app1.JPG)
+* **Edit Task Modal** 
+![App Edit Screenshot](./assets/todo_app1.JPG)
 ---
 
 ## 📂 Future Improvements
